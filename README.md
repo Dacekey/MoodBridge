@@ -150,5 +150,5 @@ Portfolio-Oriented Demonstration
 
 ## 🧑‍💻 Author
 
-Your Name\
-AI / Computer Vision / Robotics / Software Engineering
+Dacekey
+Embodied AI Engineer
