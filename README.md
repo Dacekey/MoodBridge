@@ -1,5 +1,5 @@
 <h1 align="center">
-🎭 MoodBridge
+🎭 MoodBridge 🎭
 </h1>
 
 <h2 align="center">
