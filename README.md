@@ -1,154 +1,227 @@
-# 🎭 MoodBridge --- Emotion-Aware Conversational AI Web
+# 🎭 MoodBridge
 
-**MoodBridge** is a lightweight multimodal AI web application that uses
-facial expressions as a soft contextual signal to start conversations
-naturally.
+### 🐉 Real-Time Emotion-Aware Conversational AI System
 
-When a user enters the website, the system analyzes facial expressions
-via webcam and generates a gentle, emotionally aware opening message to
-initiate interaction.\
-The goal is **not to diagnose emotions**, but to create a more
-human-like conversational experience through context-aware dialogue.
+```{=html}
+<p align="center">
+```
+![Ubuntu](https://img.shields.io/badge/Ubuntu-24.04-E95420?logo=ubuntu&logoColor=white)
+![Python](https://img.shields.io/badge/Python-3.10-3776AB?logo=python&logoColor=white)
+![FastAPI](https://img.shields.io/badge/FastAPI-WebSocket-009688?logo=fastapi&logoColor=white)
+![React](https://img.shields.io/badge/React-Frontend-61DAFB?logo=react&logoColor=black)
+![OpenCV](https://img.shields.io/badge/OpenCV-Computer%20Vision-5C3EE8?logo=opencv&logoColor=white)
+![YOLO](https://img.shields.io/badge/YOLO-Emotion%20Detection-111111)
+![WebSocket](https://img.shields.io/badge/WebSocket-Realtime-2C3E50)
+![Vite](https://img.shields.io/badge/Vite-Build%20Tool-646CFF?logo=vite&logoColor=white)
+![Whisper](https://img.shields.io/badge/Whisper-Speech%20to%20Text-412991)
+![Edge TTS](https://img.shields.io/badge/Edge--TTS-Text%20to%20Speech-0078D4)
+![Llama 3](https://img.shields.io/badge/Llama%203-Local%20LLM-8E44AD)
+![Node.js](https://img.shields.io/badge/Node.js-18-339933?logo=node.js&logoColor=white)
+![Conda](https://img.shields.io/badge/Conda-Environment-44A833?logo=anaconda&logoColor=white)
+![Architecture](https://img.shields.io/badge/Architecture-State%20Machine-blue)
+![Runtime](https://img.shields.io/badge/Runtime-Realtime-orange)
+![Status](https://img.shields.io/badge/Status-Stable-brightgreen)
 
-------------------------------------------------------------------------
-
-## 🚀 Project Overview
-
-Traditional chatbots start conversations generically:
-
-> "Hello, how can I help you?"
-
-MoodBridge introduces a more natural approach:
-
-> "You seem quite relaxed today --- how has your day been so far?"
-
-The system uses computer vision to estimate facial expression and then
-leverages a language model to generate an appropriate conversational
-opener.
-
-This project demonstrates a **multimodal AI interaction system**
-combining:
-
--   Computer Vision
--   Conversational AI
--   Real-time Web Interaction
--   Human-Centered AI Design
+```{=html}
+</p>
+```
 
 ------------------------------------------------------------------------
 
-## 🎯 Objectives
+## 🦈 Overview
 
--   Build a real-time AI conversational web interface
--   Use facial expression detection as contextual input
--   Generate emotion-aware conversation starters
--   Demonstrate a multimodal AI system architecture
--   Create a strong AI / Computer Vision portfolio project
+**MoodBridge** is a real-time multimodal conversational AI system that
+integrates:
 
-------------------------------------------------------------------------
+-   facial emotion detection\
+-   realtime speech interaction\
+-   large language model reasoning\
+-   text-to-speech synthesis
 
-## 🏗 System Architecture
+into a unified browser-based conversational experience.
 
-User\
-│\
-│ Webcam Stream\
-▼\
-Frontend (Web UI)\
-│\
-│ Video Frame\
-▼\
-Computer Vision Model\
-(Face + Expression Detection)\
-│\
-│ Emotion Label + Confidence\
-▼\
-Backend API\
-│\
-│ Context Prompt\
-▼\
-Large Language Model\
-│\
-│ Generated Opening Message\
-▼\
-Chat Interface
+The system is built around a backend-orchestrated runtime with a
+deterministic state machine controlling the full conversation lifecycle.
 
 ------------------------------------------------------------------------
 
-## ⚙️ Key Features
+## 🦅 Vision
 
--   Real-time webcam emotion detection
--   Emotion-aware conversation starter generation
--   Multimodal AI interaction (vision + language)
--   Web-based conversational interface
--   Privacy-aware design (user consent required)
--   Lightweight and deployable architecture
+MoodBridge represents an early step toward building intelligent systems
+capable of understanding human emotional signals through perception and
+interaction.
 
-------------------------------------------------------------------------
+The long-term vision is to develop systems that can:
 
-## 🧪 MVP Scope
+-   perceive emotional context\
+-   interpret user intent\
+-   respond naturally in real time\
+-   adapt behavior dynamically
 
-The initial version will focus on:
-
--   Single user interaction
--   Webcam input
--   Basic emotion classification
-
-Emotion classes:
-
--   Happy
--   Neutral
--   Sad
--   Surprised
--   Angry
+Ultimately, the goal is to gradually reduce the boundary between humans
+and machines and enable more natural human-computer interaction.
 
 ------------------------------------------------------------------------
 
-## 🔐 Privacy & Ethics
+## 🐅 System Interface
 
--   User must explicitly allow camera access
--   No video is stored
--   Emotion detection is probabilistic
--   The system never claims emotional certainty
-
-Example safe phrasing:
-
-> "I might be mistaken, but you seem a bit tired today."
-
-------------------------------------------------------------------------
-
-## 📈 Future Improvements
-
--   Emotion history tracking
--   Voice emotion detection
--   Personalized conversation style
--   Real-time emotion smoothing
--   Multi-modal emotion fusion (face + voice)
--   On-device inference
--   Emotion-adaptive dialogue system
+```{=html}
+<p align="center">
+```
+`<img src="images/moodbridge_i1.png" width="85%">`{=html}
+```{=html}
+</p>
+```
 
 ------------------------------------------------------------------------
 
-## 🎓 Learning Outcomes
+## 🐂 Conversation States
 
-This project demonstrates:
-
--   Real-time AI system design
--   Computer vision pipeline integration
--   Multimodal interaction architecture
--   Prompt engineering
--   Web deployment of AI models
--   Human-centered AI design
-
-------------------------------------------------------------------------
-
-## 📊 Project Type
-
-Personal Project\
-AI / Computer Vision / Web Application\
-Portfolio-Oriented Demonstration
+```{=html}
+<p align="center">
+```
+`<img src="images/s1_thinking.png" width="30%">`{=html}
+`<img src="images/s2_listening.png" width="30%">`{=html}
+`<img src="images/s3_waiting.png" width="30%">`{=html}
+```{=html}
+</p>
+```
 
 ------------------------------------------------------------------------
 
-## 🧑‍💻 Author
+## 🐎 Project Structure
 
-Dacekey\
-Embodied AI Engineer
+    moodbridge/
+    │
+    ├── backend/
+    ├── frontend/
+    ├── services/
+    ├── models/
+    ├── demos/
+    ├── scripts/
+    ├── env/
+    ├── docs/
+    ├── images/
+    └── tools/
+
+------------------------------------------------------------------------
+
+## 🦋 System Requirements
+
+### Hardware
+
+CPU: 4 cores\
+RAM: 8 GB\
+Microphone: required\
+Camera: required\
+GPU: optional
+
+### Software
+
+Ubuntu 22.04 / 24.04\
+Python 3.10\
+Node.js 18+\
+Conda\
+Git
+
+------------------------------------------------------------------------
+
+## 🐝 Quick Start (Recommended)
+
+This project is designed to be launched using shell scripts for
+reproducibility.
+
+### 1. Clone Repository
+
+``` bash
+git clone https://github.com/<your-username>/moodbridge.git
+cd moodbridge
+```
+
+### 2. Create Environment
+
+``` bash
+conda env create -f environment.yml
+conda activate mood_bridge
+```
+
+### 3. Load Environment Variables
+
+``` bash
+source env/llm.sh
+```
+
+### 4. Run the System
+
+``` bash
+./scripts/run_main.sh
+```
+
+This script will:
+
+-   start backend runtime\
+-   start frontend interface\
+-   initialize services
+
+### Stop the System
+
+``` bash
+./scripts/stop_main.sh
+```
+
+------------------------------------------------------------------------
+
+## Demo Mode
+
+``` bash
+./scripts/run_subs.sh
+```
+
+------------------------------------------------------------------------
+
+## 🐙 Manual Startup (Advanced)
+
+### Backend
+
+``` bash
+cd backend
+
+uvicorn app.main:app \
+  --reload \
+  --ws-ping-interval 60 \
+  --ws-ping-timeout 60 \
+  --timeout-keep-alive 120
+```
+
+### Frontend
+
+``` bash
+cd frontend
+
+npm install
+npm run dev
+```
+
+------------------------------------------------------------------------
+
+## 🐬 Fully Details
+
+``` bash
+docs/MoodBridge_Technical_Report.pdf
+```
+
+------------------------------------------------------------------------
+
+## 🦉 Current System Status
+
+System State: Stable\
+Interaction Mode: Realtime\
+Architecture: Backend-Orchestrated
+
+------------------------------------------------------------------------
+
+## 🐕 Author
+
+**Dacekey**\
+AI-Robotics Engineering\
+Faculty of Artificial Intelligence | FPT University
