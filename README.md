@@ -3,7 +3,7 @@
 </h1>
 
 <h2 align="center">
-🐉 Real-Time Emotion-Aware Conversational AI System
+🐉 Real-Time voice-based emotion-aware conversational AI web application
 </h2>
 
 <p align="center">
