@@ -1,0 +1,71 @@
+                           +------------------+
+                           |     STOPPED      |
+                           | Session inactive |
+                           +------------------+
+                                    ^
+                                    |
+                            stop_session / fatal stop
+                                    |
++------------------+        +------------------+
+|      ERROR       |<-------|      READY       |
+| Runtime failure  |        | Session created  |
++------------------+        +------------------+
+         ^                           |
+         |                           | start_conversation
+         |                           v
+         |                  +------------------+
+         |                  |     OPENING      |
+         |                  | Opening phase    |
+         |                  +------------------+
+         |                           |
+         |                           v
+         |                  +------------------+
+         |                  |     THINKING     |
+         |                  | Generate opener  |
+         |                  +------------------+
+         |                           |
+         |                           v
+         |                  +------------------+
+         |                  |     SPEAKING     |
+         |                  | TTS playback     |
+         |                  +------------------+
+         |                           |
+         |                           v
+         |                  +----------------------+
+         |                  |   ARMED_LISTENING    |
+         |                  | Ready to detect user |
+         |                  +----------------------+
+         |                           |
+         |                           | speech_started
+         |                           v
+         |                  +----------------------+
+         |                  |   CAPTURING_USER     |
+         |                  | Recording utterance  |
+         |                  +----------------------+
+         |                           |
+         |                           | speech_ended + transcript valid
+         |                           v
+         |                  +------------------+
+         |                  |     THINKING     |
+         |                  | Generate reply   |
+         |                  +------------------+
+         |                           |
+         |                           v
+         |                  +------------------+
+         |                  |     SPEAKING     |
+         |                  | TTS playback     |
+         |                  +------------------+
+         |                           |
+         |                           +----------------------+
+         |                                                  |
+         |                                                  v
+         |                                        +------------------+
+         +----------------------------------------|      PAUSED      |
+                    pause_conversation            | Session paused   |
+                                                  +------------------+
+                                                           |
+                                                           | resume / arm_listening
+                                                           v
+                                                 +----------------------+
+                                                 |   ARMED_LISTENING    |
+                                                 +----------------------+

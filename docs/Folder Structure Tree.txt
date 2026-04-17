@@ -1,0 +1,102 @@
+moodbridge/
+│
+├── backend/
+│   │
+│   ├── test_ws_client.py
+│   │
+│   └── app/
+│      │
+│      ├── main.py
+│      │
+│      ├── runtime/
+│      │   ├── voice_input_controller.py
+│      │   ├── conversation_runtime.py
+│      │   └── runtime_services.py
+│      │
+│      ├── state/
+│      │   └── conversation_state.py
+│      │
+│      ├── schemas/
+│      │   └── ws_messages.py
+│      │
+│      └── ws/
+│          └── conversation_ws.py
+│
+├── services/
+│   │
+│   ├── conversation_service.py
+│   ├── emotion_service.py
+│   ├── audio_recorder.py
+│   ├── sounddevice_recorder.py
+│   ├── speech_service.py
+│   └── tts_service.py
+│
+├── frontend/
+│   │
+│   └── src/
+│       │
+│       ├── assets/
+│       │
+│       ├── components/
+│       │   │
+│       │   ├── camera/
+│       │   │   └── CameraPreviewCard.tsx
+│       │   │
+│       │   ├── conversation/
+│       │   │   └── ConversationStream.tsx
+│       │   │
+│       │   ├── orb/
+│       │   │   └── VoiceOrb.tsx
+│       │   │
+│       │   ├── setup/
+│       │   │   ├── LanguageSwitch.tsx
+│       │   │   ├── StatusPanel.tsx
+│       │   │   ├── SystemPanel.tsx
+│       │   │   └── VoiceSessionPanel.tsx
+│       │   │
+│       │   └── ui/
+│       │       └── ToggleSwitch.tsx
+│       │
+│       ├── lib/
+│       │   └── pcmRecorder.ts
+│       │
+│       ├── pages/
+│       │   └── ConversationPage.tsx
+│       │
+│       └── types/
+│           └── ws.ts
+│
+├── demos/
+│   │
+│   ├── demo_conversation.py
+│   ├── demo_speech.py
+│   └── demo_webcam.py
+│
+├── models/
+│   │
+│   ├── yolov11s_v1.pt
+│   └── data.yaml
+│
+├── env/
+│   │
+│   └── llm.sh
+│
+├── scripts/
+│   │
+│   ├── run_main.sh
+│   ├── run_subs.sh
+│   └── stop_main.sh
+│
+├── docs/
+│
+├── images/
+│
+├── tools/
+│   │
+│   ├── test_audio_devices.py
+│   ├── test_edge_tts.py
+│   └── test_llm_api.py
+│
+├── environment.yml
+├── requirements.txt
+└── README.md

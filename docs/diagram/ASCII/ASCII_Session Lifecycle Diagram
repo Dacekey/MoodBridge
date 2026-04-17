@@ -1,0 +1,45 @@
++---------------------------+
+| Session Request           |
+| start_session             |
++-------------+-------------+
+              |
+              v
++---------------------------+
+| Hardware Preparation      |
+| - camera permission       |
+| - microphone permission   |
+| - device readiness        |
++-------------+-------------+
+              |
+              v
++---------------------------+
+| Emotion Bootstrap Phase   |
+| - emotion_detection_start |
+| - video_frame             |
+| - emotion result          |
++-------------+-------------+
+              |
+              v
++---------------------------+
+| Conversation Active       |
+| - opening                 |
+| - listening               |
+| - capture                 |
+| - response                |
++------+------+-------------+
+       |      |
+       |      |
+       v      v
++-----------+ +------------------+
+| Paused    | | Error Recovery   |
+| session   | | degraded path    |
++-----+-----+ +--------+---------+
+      |                |
+      | resume         | recover / shutdown
+      +--------+-------+
+               |
+               v
++---------------------------+
+| Stopped Session           |
+| stop_session / cleanup    |
++---------------------------+

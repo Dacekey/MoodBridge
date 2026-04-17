@@ -1,0 +1,92 @@
+# =========================
+# Python
+# =========================
+__pycache__/
+*.py[cod]
+*.so
+*.egg-info/
+dist/
+build/
+
+# Logs
+*.log
+
+# =========================
+# Virtual Environments
+# =========================
+# env/
+venv/
+.venv/
+ENV/
+
+# Conda
+conda-meta/
+
+# =========================
+# VSCode / IDE
+# =========================
+.vscode/
+.idea/
+
+# =========================
+# Node / Frontend
+# =========================
+node_modules/
+dist/
+build/
+
+# =========================
+# OS Files
+# =========================
+.DS_Store
+Thumbs.db
+
+# =========================
+# Runtime / Temporary
+# =========================
+tmp/
+temp/
+*.tmp
+
+# =========================
+# Models (VERY IMPORTANT)
+# =========================
+# models/
+# *.pt
+# *.onnx
+# *.pth
+# *.ckpt
+# *.engine
+
+# Nếu bạn muốn giữ folder models nhưng không push weights:
+# models/*
+# !models/README.md
+
+# =========================
+# Audio / Video / Data
+# =========================
+*.wav
+*.mp3
+*.mp4
+*.avi
+
+# =========================
+# Secrets / Credentials
+# =========================
+.env
+.env.*
+secrets.json
+config.local.yaml
+
+# =========================
+# Testing / Coverage
+# =========================
+.coverage
+htmlcov/
+pytest_cache/
+
+# =========================
+# Misc
+# =========================
+*.swp
+*.bak

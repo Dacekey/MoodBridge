@@ -1,0 +1,49 @@
++------------------------------+
+| Frontend Event Sources       |
+|------------------------------|
+| - UI controls                |
+| - Camera frames              |
+| - PCM recorder               |
+| - Ping heartbeat             |
++--------------+---------------+
+               |
+               | JSON events
+               v
++------------------------------+
+| WebSocket Transport          |
+|------------------------------|
+| Persistent bidirectional     |
+| event channel                |
++--------------+---------------+
+               |
+               v
++------------------------------+
+| Backend Event Router         |
+| conversation_ws.py           |
++------+------+------+---------+
+       |      |      |
+       |      |      |
+       v      v      v
++----------+ +-------------+ +------------------+
+| Runtime  | | Audio Flow  | | Emotion Flow     |
+| State    | | PCM / VAD   | | Video / YOLO     |
+| Machine  | | / STT       | |                  |
++----------+ +-------------+ +------------------+
+       \         |                 /
+        \        |                /
+         \       |               /
+          +------+--------------+
+                 |
+                 v
++-----------------------------------------------+
+| Backend-to-Frontend Events                    |
+|-----------------------------------------------|
+| - state_update                                |
+| - emotion_update                              |
+| - emotion_detection_result                    |
+| - speech_started / speech_ended               |
+| - user_transcript                             |
+| - ai_response_chunk / ai_response_done        |
+| - pong                                        |
+| - error                                       |
++-----------------------------------------------+

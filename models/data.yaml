@@ -1,0 +1,23 @@
+# models/data.yaml
+
+model:
+  name: facial_emotion_model
+  type: emotion_classification
+  version: 1
+
+classes:
+  - angry
+  - disgust
+  - fear
+  - happy
+  - neutral
+  - sad
+  - surprise
+
+num_classes: 7
+
+preprocessing:
+  image_size: [224, 224]
+  color_mode: RGB
+  normalize: true
+
