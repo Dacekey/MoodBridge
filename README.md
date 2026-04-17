@@ -1,6 +1,10 @@
-# 🎭 MoodBridge
+<h1 align="center">
+🎭 MoodBridge
+</h1>
 
-### 🐉 Real-Time Emotion-Aware Conversational AI System
+<h2 align="center">
+🐉 Real-Time Emotion-Aware Conversational AI System
+</h2>
 
 <p align="center">
   <img src="https://img.shields.io/badge/Ubuntu-24.04-E95420?logo=ubuntu&logoColor=white" />
